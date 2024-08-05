@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chatbot in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="logoutt">
+      <button class="logout-btn ">logout</button>
+    </div>
+    <h1 class="titlee"><span style="color:rgb(251, 125, 71)">GOVT</span> Schemes Available Here..!!</h1>
+    <div class="contentt">
+      
+      <h2 class="schemess">
+          1: "Education Schemes" <br>
+          2: "Healthcare Schemes" <br>
+          3: "Social Welfare Schemes" <br>
+          4: "Rural Schemes" <br>
+          5: "Urban Development Schemes" <br>
+          6: "Environmental and Conservation Schemes" <br>
+          7: "Security and Defense Schemes" <br>
+          8: "Technology and Innovation Schemes" <br>
+          9: "Cultural and Heritage Schemes" <br>
+      </h2>
+    </div>
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot</h2>
+        
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there 👋<br>How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+
+
+    <script>
+      // Get the logout button element
+      const logoutBtn = document.querySelector('.logout-btn');
+
+      // Add event listener for logout button
+      logoutBtn.addEventListener('click', () => {
+          // Perform logout logic here (e.g., sign out the user and redirect to login page)
+          // You should implement this logic based on your authentication system
+          // For example, if you're using Firebase Authentication:
+          // firebase.auth().signOut().then(() => {
+          //     // Sign-out successful.
+          //     window.location.href = 'login.html'; // Redirect to login page
+          // }).catch((error) => {
+          //     // An error happened.
+          //     console.error(error);
+          // });
+
+          // For demonstration purposes, let's assume the user is logged out successfully
+          console.log('User logged out');
+          window.location.href = 'login.html'; // Redirect to login page
+      });
+  </script>
+
+  </body>
+</html>
